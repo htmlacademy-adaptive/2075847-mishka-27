@@ -130,11 +130,16 @@
         <address class="contacts__address"><span>адрес:</span>г. Санкт-Петербург <br>ул. Большая Конюшенная д. 19/8, офис 101
         </address>
       </div>
-      <picture>
-        <source srcset="img/image/map-mobile.jpg" media="(max-width: 767px)">
-        <source srcset="img/image/map-tablet.jpg" media="(max-width: 1150px)">
-        <img src="img/image/map-desktop.jpg" class="contacts__map" alt="Карта расположения магазина Мишка.">
-      </picture>
+      <div class="contacts__wrapper-map">
+        <svg class="contacts__map-icon" width="67" height="101">
+          <use href="img/icon/sprite.svg#map-icon"></use>
+        </svg>
+        <picture>
+          <source srcset="img/image/map-mobile.jpg" media="(max-width: 767px)">
+          <source srcset="img/image/map-tablet.jpg" media="(max-width: 1150px)">
+          <img src="img/image/map-desktop.jpg" class="contacts__map" alt="Карта расположения магазина Мишка.">
+        </picture>
+      </div>
       <div class="contacts__button-wrap">
         <button class="button contacts__button">Напишите нам</button>
       </div>
