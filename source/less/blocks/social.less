@@ -5,6 +5,10 @@
   display: flex;
   flex-wrap: wrap;
   width: 142px;
+
+  @media (min-width: @tablet-width) {
+    width: 199px;
+  }
 }
 
 .social__item {
@@ -12,8 +16,13 @@
 }
 
 .social__item:nth-child(3n) {
-
   @media (max-width: @mobile-width-only) {
+    margin: 0;
+  }
+}
+
+.social__item:nth-child(4n) {
+  @media (min-width: @tablet-width) {
     margin: 0;
   }
 }

@@ -17,5 +17,41 @@
   left: 0;
   bottom: 0;
   background-color: #e5e5e5;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-footer__htmlacademy {
+  padding: 22px 0 32px;
+  margin: 0;
+  text-align: center;
+}
+
+.main-footer__htmlacademy-link {
+  font-family: "Open Sans Bold", "Arial", sans-serif;
+  font-size: 19px;
+  line-height: 20px;
+  color: #000000;
+  text-decoration: none;
+
+  &:hover .main-footer__htmlacademy-icon {
+    color: #46c1ae;
+  }
+
+  &:active .main-footer__htmlacademy-icon {
+    color: #46c1ae;
+    opacity: 0.3;
+  }
+}
+
+.main-footer__htmlacademy-link span {
+  padding-right: 24px;
+}
+
+.main-footer__htmlacademy-icon {
+  vertical-align: middle;
+  color: #63d1bb;
 }
 
