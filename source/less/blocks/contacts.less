@@ -24,8 +24,19 @@
 }
 
 .contacts__email a {
+  position: relative;
   color: #444444;
   text-decoration: none;
+}
+
+.contacts__email a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: #63d1bb;
+  left: 0;
+  bottom: -3px;
 }
 
 .contacts__address {
