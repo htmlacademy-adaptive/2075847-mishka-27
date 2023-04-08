@@ -61,7 +61,9 @@
         <dd>15 см</dd>
       </dl>
       <picture>
-        <img src="img/image/knitted-baskets-mobile.jpg" class="product-week__image" width="260" height="315" alt="Вязанные корзинки.">
+        <source srcset="img/image/knitted-baskets-mobile.jpg" media="(max-width: 767px)">
+        <source srcset="img/image/knitted-baskets-tablet.jpg" media="(max-width: 1150px)">
+        <img src="img/image/knitted-baskets-desktop.jpg" class="product-week__image" alt="Вязанные корзинки.">
       </picture>
       <p class="product-week__price">Цена: 990 руб.</p>
       <button class="button product-week__button">Заказать</button>
@@ -119,10 +121,20 @@
       <button class="button reviews__button">Написать</button>
     </section>
     <section class="contacts">
-      <h2 class="contacts__title">Контакты</h2>
-      <address class="contacts__email">e-mail: <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></address>
-      <address class="contacts__address">адрес: г. Санкт-Петербург ул. Большая Конюшенная д. 19/8, офис 101</address>
-<!--      Карта-->
+      <div class="contacts__wrapper">
+        <h2 class="contacts__title">Контакты</h2>
+        <address class="contacts__email">
+          <span>e-mail: </span>
+          <a href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+        </address>
+        <address class="contacts__address"><span>адрес:</span>г. Санкт-Петербург <br>ул. Большая Конюшенная д. 19/8, офис 101
+        </address>
+      </div>
+      <picture>
+        <source srcset="img/image/map-mobile.jpg" media="(max-width: 767px)">
+        <source srcset="img/image/map-tablet.jpg" media="(max-width: 1150px)">
+        <img src="img/image/map-desktop.jpg" class="contacts__map" alt="Карта расположения магазина Мишка.">
+      </picture>
       <button class="button contacts__button">Напишите нам</button>
     </section>
   </main>
