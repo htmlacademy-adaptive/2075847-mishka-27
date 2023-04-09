@@ -39,14 +39,19 @@
 .main-nav__list--catalog {
   @media (min-width: @tablet-width) {
     font-size: 15px;
+    margin-left: 32px;
     position: absolute;
+    left: 0;
+    bottom: -66px;
+    width: 342px;
+    flex-wrap: wrap;
   }
 }
 
 .main-nav__list--user {
   @media (min-width: @tablet-width) {
     justify-content: end;
-    width: 740px;
+    width: 600px;
     margin-left: auto;
     flex-wrap: wrap;
   }
@@ -71,6 +76,14 @@
 
   @media (min-width: @tablet-width) {
     background-color: transparent;
+  }
+}
+
+.main-nav__link--catalog {
+  @media (min-width: @tablet-width) {
+    padding: 0 18px;
+    margin: 20px 0;
+    display: block;
   }
 }
 
@@ -162,6 +175,8 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
+    left: 48px;
+    top: 0;
   }
 }
 
