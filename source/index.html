@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
+<!--  Шапка-->
   <header class="main-header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <a class="main-nav__logo-link" href="index.html">
@@ -17,6 +18,7 @@
         </picture>
       </a>
       <button class="main-nav__toggle" type="button"></button>
+<!--      Меню-->
       <div class="main-nav__container">
         <ul class="main-nav__list  main-nav__list--catalog">
           <li class="main-nav__item">
@@ -46,6 +48,7 @@
         </ul>
       </div>
     </nav>
+<!--    Блок hero-->
     <section class="hero">
       <h1 class="visually-hidden">Магазин вязанных товаров Мишка</h1>
       <p class="hero__title">Милые штуки <br>ручной <br>работы для дома</p>
@@ -69,7 +72,9 @@
       </ul>
     </section>
   </header>
+<!--Основной блок-->
   <main class="main-container">
+<!--    Товар недели-->
     <section class="product-week">
       <p class="product-week__subtitle">Вязаные корзинки</p>
       <h2 class="product-week__title">Товар недели</h2>
@@ -88,8 +93,9 @@
         <img src="img/image/knitted-baskets-desktop.jpg" class="product-week__image" alt="Вязанные корзинки.">
       </picture>
       <p class="product-week__price">Цена: 990 руб.</p>
-      <button class="button product-week__button">Заказать</button>
+      <button class="button product-week__button" type="button">Заказать</button>
     </section>
+<!--    Коротко о нас-->
     <section class="advantages">
       <h2 class="advantages__title">Коротко о нас:</h2>
       <ul class="advantages__list">
@@ -131,17 +137,19 @@
         </li>
       </ul>
     </section>
+<!--    Отзывы-->
     <section class="reviews">
       <h2 class="reviews__title">Отзывы</h2>
       <p class="reviews__text">Я&nbsp;молодая мама, но&nbsp;всё равно фотографии не&nbsp;набирали и&nbsp;близко такого количества лайков, как у&nbsp;популярных инстамамочек. В&nbsp;отчаянии, я&nbsp;накупила аксессуаров и&nbsp;игрушек в&nbsp;Мишке, и&nbsp;мои фотографии сразу стали более стильными, а&nbsp;также набирают больше лайков!</p>
       <p class="reviews__author">Анастасия Красильникова</p>
       <p class="reviews__cite">@misssssiskras</p>
       <div class="reviews__button-wrap">
-        <button class="slide-button slide-button--prev"></button>
-        <button class="slide-button slide-button--next"></button>
+        <button class="slide-button slide-button--prev" type="button"></button>
+        <button class="slide-button slide-button--next" type="button"></button>
       </div>
-      <button class="button reviews__button">Написать</button>
+      <button class="button reviews__button" type="button">Написать</button>
     </section>
+<!--    Контакты-->
     <section class="contacts">
       <div class="contacts__wrapper">
         <h2 class="contacts__title">Контакты</h2>
@@ -163,14 +171,16 @@
         </picture>
       </div>
       <div class="contacts__button-wrap">
-        <button class="button contacts__button">Напишите нам</button>
+        <button class="button contacts__button" type="button">Напишите нам</button>
       </div>
     </section>
   </main>
+<!--  Подвал-->
   <footer class="main-footer">
     <a class="main-footer__logo" href="index.html">
 <!--      спрайт мишка-->
     </a>
+<!--    Соц сети-->
     <div class="main-footer__social-wrap">
       <ul class="main-footer__list social">
         <li class="social__item">
@@ -196,6 +206,7 @@
         </li>
       </ul>
     </div>
+<!--    htmlacademy-->
     <p class="main-footer__htmlacademy">
       <a class="main-footer__htmlacademy-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy.">
         <span>Разработано</span>
@@ -205,6 +216,30 @@
       </a>
     </p>
   </footer>
+<!--  Модальное окно корзины-->
+  <div class="modal-container" style="display: none">
+    <div class="modal-cart">
+      <section class="modal-cart__content">
+        <h2 class="modal-cart__content-title">Добавить в&nbsp;корзину</h2>
+        <p class="modal-cart__content-subtitle">Выберите размер:</p>
+        <div class="modal-cart__radio-button radio-button">
+          <label class="radio-button__label">
+            <input class="visually-hidden radio-button__input" type="radio" name="size" value="small" checked>
+            <span class="radio-button__mark radio-button__mark--small">S</span>
+          </label>
+          <label class="radio-button__label">
+            <input class="visually-hidden radio-button__input" type="radio" name="size" value="medium">
+            <span class="radio-button__mark radio-button__mark--medium">M</span>
+          </label>
+          <label class="radio-button__label">
+            <input class="visually-hidden radio-button__input" type="radio" name="size" value="large">
+            <span class="radio-button__mark radio-button__mark--large">L</span>
+          </label>
+        </div>
+        <button class="modal-cart__content-button" type="button">Добавить</button>
+      </section>
+    </div>
+  </div>
   <script src="js/script.js"></script>
   </body>
 </html>
