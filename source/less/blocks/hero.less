@@ -31,12 +31,53 @@
   color: #ffffff;
   padding: 24px 120px 31px 30px;
   display: block;
+  position: relative;
 }
 
 .hero__link--interior {
   background-color: #63d1bb;
+
+  &:hover {
+    background-color: #59d5bc;
+  }
+
+  &:hover .hero__icon {
+    opacity: 0.7;
+  }
+
+  &:active .hero__icon {
+    opacity: 0.3;
+  }
 }
 
 .hero__link--toys {
   background-color: #56c3b2;
+
+  &:hover {
+    background-color: #46c1ae;
+  }
+
+  &:hover .hero__icon {
+    opacity: 0.7;
+  }
+
+  &:active .hero__icon {
+    opacity: 0.3;
+  }
+}
+
+.hero__icon {
+  position: absolute;
+  color: #149080;
+  opacity: 0.5;
+}
+
+.hero__icon--lamp {
+  top: 23px;
+  right: 36px;
+}
+
+.hero__icon--toys {
+  top: 21px;
+  right: 27px;
 }
