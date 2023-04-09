@@ -7,12 +7,21 @@
   display: block;
 }
 
+.main-nav__container {
+  display: block;
+  background-color: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 79px;
+  width: 100%;
+  z-index: 1;
+}
+
 .main-nav__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
   font-family: "Open Sans Bold", "Arial", sans-serif;
-  display: none;
 }
 
 .main-nav__item {
@@ -26,12 +35,36 @@
   color: inherit;
   text-decoration: none;
   background-color: #ffffff;
+  position: relative;
 
   @media (max-width: @mobile-width-only) {
     display: block;
     padding: 28.5px 0 25.5px 76px;
-    width: 100%;
   }
+}
+
+.main-nav__link:hover {
+  opacity: 0.6;
+
+  .main-nav__icon {
+    opacity: 1;
+    color: #63d1bb;
+  }
+}
+
+.main-nav__icon {
+  position: absolute;
+  opacity: 0.2;
+}
+
+.main-nav__icon--search {
+  left: 32px;
+  top: 32px;
+}
+
+.main-nav__icon--cart {
+  left: 30px;
+  top: 31px;
 }
 
 .main-nav__toggle {
@@ -71,22 +104,15 @@
   right: 30px;
 }
 
-.main-nav--opened .main-nav__list--catalog {
+.main-nav--opened .main-nav__container {
   display: block;
-  position: absolute;
-  left: 0;
-  top: 79px;
 }
 
-.main-nav--opened .main-nav__list--user {
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 236px;
-  z-index: 1;
+.main-nav--closed .main-nav__container {
+  display: none;
 }
 
-.main-nav--nojs .main-nav__list {
+.main-nav--nojs .main-nav__container {
   position: static;
   display: block;
 }
