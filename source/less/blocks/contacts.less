@@ -1,5 +1,10 @@
 .contacts__wrapper {
   padding: 38px 30px 62px 29px;
+
+  @media (min-width: @tablet-width) {
+    padding: 85px 30px 49px 50px;
+    position: relative;
+  }
 }
 
 .contacts__title {
@@ -7,6 +12,31 @@
   font-size: 25px;
   line-height: 30px;
   margin: 0 0 28px 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    margin: 0 0 49px 0;
+  }
+}
+
+.contacts__icon {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    position: absolute;
+    right: 53px;
+    top: 62px;
+  }
+}
+
+.contacts__wrapper-address {
+  @media (min-width: @tablet-width) {
+    column-count: 2;
+    padding-right: 45px;
+    column-gap: 22px;
+  }
 }
 
 .contacts__email {
@@ -14,10 +44,18 @@
   line-height: 30px;
   font-style: normal;
   margin-bottom: 30px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+  }
 }
 
 .contacts__email span {
-  padding-right: 30px
+  padding-right: 30px;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 20px;
+  }
 }
 
 .contacts__link {
@@ -57,10 +95,18 @@
   line-height: 30px;
   font-style: normal;
   display: flex;
+
+  @media (min-width: @tablet-width) {
+    font-size: 17px;
+  }
 }
 
 .contacts__address span {
-  padding-right: 35px
+  padding-right: 35px;
+
+  @media (min-width: @tablet-width) {
+    padding-right: 26px;
+  }
 }
 
 .contacts__wrapper-map {
