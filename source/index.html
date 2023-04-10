@@ -79,24 +79,34 @@
   <main class="main-container">
 <!--    Товар недели-->
     <section class="product-week">
-      <p class="product-week__subtitle">Вязаные корзинки</p>
-      <h2 class="product-week__title">Товар недели</h2>
-      <p class="product-week__text">Экологически чистая пряжа, ручная работа. Доступны в&nbsp;шести расцветках и&nbsp;трёх размерах.</p>
-      <dl class="product-week__list">
-        <dt>Цвет:</dt>
-        <dd>тиффани/серый</dd>
-        <dt>Диаметр:</dt>
-        <dd>25 см</dd>
-        <dt>Высота:</dt>
-        <dd>15 см</dd>
-      </dl>
-      <picture>
-        <source srcset="img/image/knitted-baskets-mobile.jpg" media="(max-width: 767px)">
-        <source srcset="img/image/knitted-baskets-tablet.jpg" media="(max-width: 1150px)">
-        <img src="img/image/knitted-baskets-desktop.jpg" class="product-week__image" alt="Вязанные корзинки.">
-      </picture>
-      <p class="product-week__price">Цена: 990 руб.</p>
-      <button class="button product-week__button" type="button">Заказать</button>
+      <div class="product-week__container">
+        <p class="product-week__subtitle">Вязаные корзинки</p>
+        <h2 class="product-week__title">Товар недели</h2>
+        <div class="product-week__wrapper">
+          <div class="product-week__wrap product-week__wrap--main">
+            <p class="product-week__text">Экологически чистая пряжа, ручная работа. Доступны в&nbsp;шести расцветках и&nbsp;трёх размерах.</p>
+            <dl class="product-week__list">
+              <dt>Цвет:</dt>
+              <dd>тиффани/серый</dd>
+              <dt>Диаметр:</dt>
+              <dd>25 см</dd>
+              <dt>Высота:</dt>
+              <dd>15 см</dd>
+            </dl>
+          </div>
+          <div class="product-week__wrap product-week__wrap--image">
+            <picture>
+              <source srcset="img/image/knitted-baskets-mobile.jpg" media="(max-width: 767px)">
+              <source srcset="img/image/knitted-baskets-tablet.jpg" media="(max-width: 1150px)">
+              <img src="img/image/knitted-baskets-desktop.jpg" class="product-week__image" alt="Вязанные корзинки.">
+            </picture>
+          </div>
+          <div class="product-week__wrap product-week__wrap--price">
+            <p class="product-week__price">Цена: 990 руб.</p>
+            <button class="button product-week__button" type="button">Заказать</button>
+          </div>
+        </div>
+      </div>
     </section>
 <!--    Коротко о нас-->
     <section class="advantages">
