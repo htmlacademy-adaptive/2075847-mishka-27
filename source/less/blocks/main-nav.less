@@ -157,15 +157,15 @@
 }
 
 .main-nav__toggle {
-  display: none;
+  display: block;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  cursor: pointer;
+  padding: 0;
 
-  @media (max-width: @mobile-width-only) {
-    display: block;
-    background-color: transparent;
-    border: none;
-    position: absolute;
-    cursor: pointer;
-    padding: 0;
+  @media (min-width: @tablet-width) {
+  display: none;
   }
 }
 
