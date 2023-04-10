@@ -39,6 +39,19 @@
   }
 }
 
+.hero__text {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+    position: absolute;
+    top: 5px;
+    right: 50px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+}
+
 .hero__title {
   font-family: "Open Sans Bold", "Arial", sans-serif;
   font-size: 27px;
@@ -67,6 +80,7 @@
   @media (min-width: @tablet-width) {
     column-count: 2;
     column-gap: 0;
+    margin-bottom: -5px;
   }
 }
 
@@ -81,9 +95,15 @@
   position: relative;
 
   @media (min-width: @tablet-width) {
-    padding: 25px 120px 35px 36px;
+    padding: 25px 120px 40px 36px;
     font-size: 20px;
     line-height: 30px;
+  }
+}
+
+.hero__link:hover {
+  @media (min-width: @tablet-width) {
+    transform: translateY(-5px);
   }
 }
 
