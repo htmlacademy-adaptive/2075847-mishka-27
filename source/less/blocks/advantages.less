@@ -1,12 +1,22 @@
 .advantages {
   font-family: "Open Sans Bold", "Arial", sans-serif;
   padding: 31px 30px 29px;
+
+  @media (min-width: @tablet-width) {
+    padding: 57px 50px 50px;
+  }
 }
 
 .advantages__title {
   font-size: 25px;
   line-height: 30px;
   margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 43px;
+    line-height: 50px;
+    margin-bottom: 12px;
+  }
 }
 
 .advantages__list {
@@ -14,11 +24,23 @@
   padding: 0;
   list-style-type: none;
   line-height: 20px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+    column-count: 2;
+    column-gap: 1px;
+  }
 }
 
 .advantages__item {
   padding: 83px 0 0 0;
   position: relative;
+
+  @media (min-width: @tablet-width) {
+    padding: 85px 0 0 0;
+    margin-bottom: 26px;
+  }
 }
 
 .advantages__item svg {
