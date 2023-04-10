@@ -117,6 +117,11 @@
   position: absolute;
   left: 43%;
   top: 32%;
+
+  @media (min-width: @tablet-width) {
+    left: 47%;
+    top: 30%;
+  }
 }
 
 .contacts__map {
@@ -127,4 +132,15 @@
 
 .contacts__button-wrap {
   padding: 42px 30px 39px;
+
+  @media (min-width: @tablet-width) {
+    padding: 55px 50px 57px 50px;
+  }
+}
+
+.contacts__button {
+  @media (min-width: @tablet-width) {
+    width: 230px;
+    margin: 0 auto;
+  }
 }
