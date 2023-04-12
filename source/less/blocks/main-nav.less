@@ -38,12 +38,13 @@
 
 .main-nav__list--catalog {
   @media (min-width: @tablet-width) {
+    height: 64px;
     font-size: 15px;
     margin-left: 32px;
     position: absolute;
     left: 0;
     bottom: -66px;
-    width: 342px;
+    width: calc(100% - 345px);
     flex-wrap: wrap;
     z-index: 2;
   }
@@ -52,7 +53,7 @@
 .main-nav__list--user {
   @media (min-width: @tablet-width) {
     justify-content: end;
-    width: 600px;
+    width: calc(100% - 190px);
     margin-left: auto;
     flex-wrap: wrap;
   }
