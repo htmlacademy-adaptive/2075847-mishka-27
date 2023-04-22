@@ -168,6 +168,7 @@
   position: absolute;
   left: 43%;
   top: 32%;
+  display: none;
 
   @media (min-width: @tablet-width) {
     left: 47%;
@@ -183,7 +184,7 @@
 .contacts__map {
   width: 100%;
   object-fit: cover;
-  display: block;
+  display: none;
   background-color: #f4e9d7;
   height: auto;
 }
@@ -214,4 +215,20 @@
     width: 230px;
     margin: 0;
   }
+}
+
+.contacts__google-map {
+  width: 100%;
+}
+
+.contacts__wrapper-map--nojs .contacts__google-map {
+  display: none;
+}
+
+.contacts__wrapper-map--nojs .contacts__map {
+  display: block;
+}
+
+.contacts__wrapper-map--nojs .contacts__map-icon {
+  display: block;
 }

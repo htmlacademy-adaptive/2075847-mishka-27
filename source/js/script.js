@@ -13,9 +13,9 @@ navToggle.addEventListener('click', function () {
   }
 });
 
-let map = document.querySelector('.search-hotel');
+let map = document.querySelector('.contacts__wrapper-map');
 
-map.classList.remove('search-hotel--nojs');
+map.classList.remove('contacts__wrapper-map--nojs');
 
 let headerWrap = document.querySelector('.main-header__wrap');
 
