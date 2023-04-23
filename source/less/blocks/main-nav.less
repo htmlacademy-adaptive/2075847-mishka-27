@@ -149,7 +149,6 @@
     display: block;
     padding: 33px 50px 31px 83px;
     box-sizing: border-box;
-    height: 88px;
   }
 
   @media (min-width: @desktop-width) {
@@ -175,6 +174,16 @@
 
   .main-nav__icon {
     opacity: 0.3;
+    color: #63d1bb;
+  }
+}
+
+.main-nav__link:focus-visible {
+  color: rgba(0, 0, 0, 0.6);
+  outline-offset: -1px;
+
+  .main-nav__icon {
+    opacity: 1;
     color: #63d1bb;
   }
 }
