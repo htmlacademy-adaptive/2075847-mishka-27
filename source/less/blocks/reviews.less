@@ -11,7 +11,7 @@
   }
 }
 
-.reviews:before {
+.reviews::before {
   content: "";
   position: absolute;
   left: 0;
@@ -35,7 +35,7 @@
   }
 }
 
-.reviews:after {
+.reviews::after {
   @media (min-resolution: 2dppx) {
     background-image: url("../img/image/reviews-background@2x.jpg");
   }
@@ -179,6 +179,10 @@
 
   &:active {
     opacity: 0.3;
+  }
+
+  &:focus-visible {
+    opacity: 0.6;
   }
 }
 
