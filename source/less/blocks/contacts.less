@@ -109,7 +109,7 @@
 .contacts__link:hover {
   color: #46c1ae;
 
-  &:before {
+  &::before {
     background-color: #46c1ae;
   }
 }
@@ -117,12 +117,12 @@
 .contacts__link:active {
   color: #46c1ae;
 
-  &:before {
+  &::before {
     display: none;
   }
 }
 
-.contacts__link:before {
+.contacts__link::before {
   content: "";
   position: absolute;
   width: 100%;
