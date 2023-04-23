@@ -146,17 +146,6 @@
   &:active .hero__icon {
     opacity: 0.3;
   }
-}
-
-.hero__link:focus-visible {
-  @media (min-width: @tablet-width) {
-    transform: translateY(-5px);
-    outline-offset: -1px;
-  }
-}
-
-.hero__link--interior {
-  background-color: #63d1bb;
 
   &:focus-visible {
     background-color: #59d5bc;
@@ -165,9 +154,12 @@
   &:focus-visible .hero__icon {
     opacity: 0.7;
   }
+}
 
-  &:focus-visible .hero__icon {
-    opacity: 0.3;
+.hero__link:focus-visible {
+  @media (min-width: @tablet-width) {
+    transform: translateY(-5px);
+    outline-offset: -1px;
   }
 }
 
@@ -185,10 +177,6 @@
   &:active .hero__icon {
     opacity: 0.3;
   }
-}
-
-.hero__link--toys {
-  background-color: #56c3b2;
 
   &:focus-visible {
     background-color: #46c1ae;
@@ -196,10 +184,6 @@
 
   &:focus-visible .hero__icon {
     opacity: 0.7;
-  }
-
-  &:focus-visible .hero__icon {
-    opacity: 0.3;
   }
 }
 
