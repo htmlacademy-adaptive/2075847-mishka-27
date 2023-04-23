@@ -301,4 +301,14 @@
 .main-nav--nojs .main-nav__container {
   position: static;
   display: block;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 480px 190px 480px;
+  }
 }
